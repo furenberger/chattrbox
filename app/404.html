@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Page not found</title>
+    <style>
+        html, body{
+            font-family: 'Circular,"Helvetica Neue",Helvetica,Arial,sans-serif';
+            color: #5a5a5a;
+            height: 100%;
+            display: flex;
+        }
+
+        .overlay{
+            z-index: 10;
+        }
+
+        .overlay-content{
+            font-size: 250px;
+            font-weight: 700;
+        }
+
+        .container {
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            max-width: 50%;
+        }
+
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container overlay">
+        <div class="item overlay-content">
+            404
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <iframe src="http://www.youtube.com/embed/SIaFtAKnqBU?vq=hd720&amp;rel=0&amp;showinfo=0&amp;controls=0&amp;iv_load_policy=3&amp;loop=1&amp;playlist=SIaFtAKnqBU&amp;modestbranding=1&amp;autoplay=1"
+                    frameborder="0"
+                    allowfullscreen
+                    class="video">
+
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
